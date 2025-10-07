@@ -1,3 +1,4 @@
+'use client';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stars } from '@react-three/drei'
 import Earth from './Earth'
@@ -5,6 +6,7 @@ import {useMemo, useRef } from 'react'
 import { TextureLoader } from 'three'
 import { useLoader } from '@react-three/fiber'
 import {useMemo} from 'react'
+
 
 function latLonToVector3(lat, lon, radius=1.5) {
     const phi = (90 - lat) * (Math.PI / 180);
